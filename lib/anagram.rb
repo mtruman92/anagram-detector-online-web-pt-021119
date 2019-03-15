@@ -7,8 +7,8 @@ class Anagram
     @word = word
   end
   
-  def match(anagram)
-    anagram.select do |random| 
+  def match(array_words)
+    array_words.select do |random| 
       (@word.split(" ").sort) == (random.split(" ").sort)
     end
     
