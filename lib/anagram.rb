@@ -7,12 +7,12 @@ class Anagram
     @word = word
   end
   
-  def match(array_words)
-    array_words.select do |random| 
-      (@word.split(" ").sort) == (random.split(" ").sort)
-    end
-    
+  def match(anagram)
+    anagram.select do |some_word| 
+      (some_word.split("").sort) == (some_word.split("").sort)
+    end    
   end
+
 end
   
     
